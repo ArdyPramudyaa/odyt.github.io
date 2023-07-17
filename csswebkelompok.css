@@ -1,0 +1,65 @@
+
+*{
+box-sizing: border-box;
+}
+
+.header, .column, .topnav, .footer{border: 5px double black}
+.topnav a{border: 5px double white}
+
+body {
+margin: 0;
+}
+
+/* style the header */
+.header {
+background-color: grey;
+font-size: 30px;
+padding: 20px;
+text-align: center;
+}
+
+/* style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+
+/* change color on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* create three unequal colums that float */
+.column { 
+float: left;
+padding: 10px;
+}
+
+/* left and right column */
+.column.side {
+background-color: white;
+width: 25%; height: 750px;
+text-align:justify;
+}
+
+/* clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - makes the three columns */
+@media screen and (max-width: 600px) {
+.column.side, .column.middle {
+width: 100%;
+}
+}
+
+/* Style the footer */
+.footer {
+background-color: grey;
+padding: 30px;
+text-align: center;
+}
